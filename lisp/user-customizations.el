@@ -24,8 +24,17 @@
 (golden-ratio-mode 1)
 
 
+;; markdown support
+(require-package 'markdown-mode)
+
+
 ;; magit
 (require-package 'magit)
+
+
+;; file explorer
+(require-package 'neotree)
+(neotree-show)
 
 
 (provide 'user-customizations)
