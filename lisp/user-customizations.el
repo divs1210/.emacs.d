@@ -35,6 +35,7 @@
 ;; file explorer
 (require-package 'neotree)
 (setq neo-autorefresh nil)
+(global-set-key [f3] 'neotree-toggle)
 (neotree-show)
 
 
