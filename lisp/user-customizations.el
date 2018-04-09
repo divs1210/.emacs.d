@@ -15,5 +15,10 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 
+;; golden ratio
+(require-package 'golden-ratio)
+(golden-ratio-mode 1)
+
+
 (provide 'user-customizations)
 ;;; user-customizations.el ends here
