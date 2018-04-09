@@ -5,6 +5,10 @@
       mac-option-modifier 'none)
 
 
+;; disable toolbar
+(tool-bar-mode -1)
+
+
 ;; theme
 (require-package 'zenburn-theme)
 (load-theme 'zenburn t)
