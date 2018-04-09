@@ -20,5 +20,9 @@
 (golden-ratio-mode 1)
 
 
+;; magit
+(require-package 'magit)
+
+
 (provide 'user-customizations)
 ;;; user-customizations.el ends here
