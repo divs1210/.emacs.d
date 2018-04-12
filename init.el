@@ -9,8 +9,8 @@
 ;; - clojure-mode
 ;; - cider
 ;; - company
-;; NOPE flycheck (not from stable!)
-;; NOPE flycheck-clojure
+;; - flycheck (not from stable!)
+;; - flycheck-clojure
 ;; - clj-refactor
 
 ;; Add .emacs.d/lisp to load-path
@@ -62,7 +62,7 @@ re-downloaded in order to locate PACKAGE."
   (exec-path-from-shell-initialize))
 
 (dolist (file '("cfg-paredit.el"
-		;; "cfg-flycheck.el"
+		"cfg-flycheck.el"
 		"cfg-hlsexp.el"
 		"cfg-cider.el"
                 "cfg-cljrefactor.el"))
