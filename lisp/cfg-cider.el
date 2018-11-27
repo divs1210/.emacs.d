@@ -16,7 +16,7 @@
 (setq cider-repl-use-clojure-font-lock t)
 
 ;; result prefix for the REPL
-(setq cider-repl-result-prefix ";; => ")
+(setq cider-repl-result-prefix "")
 
 ;; never ending REPL history
 (setq cider-repl-wrap-history t)

@@ -63,7 +63,7 @@ re-downloaded in order to locate PACKAGE."
 
 (dolist (file '("cfg-paredit.el"
 		"cfg-flycheck.el"
-		"cfg-hlsexp.el"
+		;; "cfg-hlsexp.el"
 		"cfg-cider.el"
                 "cfg-cljrefactor.el"))
   (load (concat dotfiles-lisp-dir file)))
@@ -81,3 +81,18 @@ re-downloaded in order to locate PACKAGE."
 
 (when (file-exists-p (concat dotfiles-lisp-dir "user-customizations.el"))
   (load (concat dotfiles-lisp-dir "user-customizations.el")))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(package-selected-packages
+   (quote
+    (go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
