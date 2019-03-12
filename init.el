@@ -89,7 +89,9 @@ re-downloaded in order to locate PACKAGE."
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell))))
+    (smex ido-completing-read+ ## highlight-indentation highlight-indent-guides all-the-icons spaceline spaceline-config sayid browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
