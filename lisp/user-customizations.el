@@ -23,10 +23,13 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 
-;; golden ratio
+;; buffer sizes
 ;; ============
-(require-package 'golden-ratio)
-(golden-ratio-mode 1)
+(require-package 'zoom)
+(custom-set-variables
+ '(zoom-mode t))
+(custom-set-variables
+ '(zoom-size '(0.618 . 0.618)))
 
 
 ;; markdown
@@ -132,6 +135,9 @@
 (require 'icomplete)
 (icomplete-mode 1)
 
+(require-package 'ido-vertical-mode)
+(ido-vertical-mode 1)
+(setq ido-vertical-define-keys 'C-n-C-p-up-and-down)
 
 ;; Kill Ring Dropdown
 ;; ==================

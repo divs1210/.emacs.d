@@ -89,7 +89,7 @@ re-downloaded in order to locate PACKAGE."
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (smex ido-completing-read+ ## highlight-indentation highlight-indent-guides all-the-icons spaceline spaceline-config sayid browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
+    (ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
