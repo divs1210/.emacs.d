@@ -89,9 +89,11 @@ re-downloaded in order to locate PACKAGE."
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
+    (shell-pop adoc-mode ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
  '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(zoom-mode t nil (zoom))
+ '(zoom-size (quote (0.618 . 0.618))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
