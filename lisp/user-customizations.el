@@ -75,7 +75,7 @@
 ;; (add-hook 'clojurescript-mode-hook #'inf-clojure-minor-mode)
 
 ;; figwheel repl
-
+;; =============
 (setq cider-cljs-lein-repl
       "(do (require 'figwheel-sidecar.repl-api)
          (figwheel-sidecar.repl-api/start-figwheel!)

@@ -90,6 +90,13 @@ re-downloaded in order to locate PACKAGE."
  '(package-selected-packages
    (quote
     (shell-pop adoc-mode ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
+ '(shell-pop-shell-type
+   (quote
+    ("ansi-term" "*ansi-term*"
+     (lambda nil
+       (ansi-term shell-pop-term-shell)))))
+ '(shell-pop-term-shell "/bin/zsh")
+ '(shell-pop-universal-key "C-t")
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(zoom-mode t nil (zoom))
