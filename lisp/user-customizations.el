@@ -118,9 +118,13 @@
 
 ;; Interactive Mode
 ;; ================
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
+(require-package 'flx-ido)
 (ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
 
 (require-package 'ido-completing-read+)
 (ido-ubiquitous-mode 1)
@@ -132,12 +136,13 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-(require 'icomplete)
+(require-package 'icomplete)
 (icomplete-mode 1)
 
 (require-package 'ido-vertical-mode)
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-C-p-up-and-down)
+
 
 ;; Kill Ring Dropdown
 ;; ==================
@@ -176,6 +181,18 @@
  '(shell-pop-shell-type (quote ("ansi-term" "*ansi-term*" (lambda nil (ansi-term shell-pop-term-shell)))))
  '(shell-pop-term-shell "/bin/zsh")
  '(shell-pop-universal-key "C-t"))
+
+
+;; Projectile
+;; ==========
+(require-package 'projectile)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(projectile-mode +1)
+
+
+;; GC Tuning for elisp
+;; ===================
+(setq gc-cons-threshold 20000000)
 
 
 (provide 'user-customizations)
