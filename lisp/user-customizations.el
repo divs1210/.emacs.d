@@ -216,7 +216,7 @@
     (progn (cider-find-ns "-" kw-ns)
            (search-forward-regexp (concat "reg-[a-zA-Z-]*[ \\\n]+" kw-to-find) nil 'noerror))))
 
-(global-set-key (kbd "M->") 're-frame-jump-to-reg)
+(global-set-key (kbd "C-.") 're-frame-jump-to-reg)
 
 
 (provide 'user-customizations)
