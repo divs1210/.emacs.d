@@ -89,7 +89,7 @@ re-downloaded in order to locate PACKAGE."
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (flx-ido shell-pop adoc-mode ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
+    (flycheck-clj-kondo parinfer markdown-preview-mode flx-ido shell-pop adoc-mode ido-vertical-mode smex ido-completing-read+ ## all-the-icons spaceline spaceline-config browse-kill-ring cider terraform-mode emamux javascript-eslint web-mode lsp-java go-mode projectile-rails dumb-jump inf-clojure nim-mode neotree magit markdown-mode golden-ratio zenburn-theme clj-refactor company paredit flycheck-clojure exec-path-from-shell)))
  '(shell-pop-shell-type
    (quote
     ("ansi-term" "*ansi-term*"

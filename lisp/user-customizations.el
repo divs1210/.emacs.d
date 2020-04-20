@@ -69,12 +69,12 @@
 
 ;; figwheel easy repl
 ;; ==================
-;; (require-package 'inf-clojure)
-;; (defun figwheel-repl ()
-;;   (interactive)
-;;   (inf-clojure "lein figwheel"))
-;;
-;; (add-hook 'clojurescript-mode-hook #'inf-clojure-minor-mode)
+(require-package 'inf-clojure)
+(defun figwheel-repl ()
+  (interactive)
+  (inf-clojure "lein figwheel"))
+
+(add-hook 'clojurescript-mode-hook #'inf-clojure-minor-mode)
 
 ;; figwheel repl
 ;; =============
@@ -188,6 +188,21 @@
 ;; GC Tuning for elisp
 ;; ===================
 (setq gc-cons-threshold 20000000)
+
+
+;; Clojure linting
+;; ===============
+;; (require-package 'flycheck-clj-kondo)
+;; (add-hook 'clojure-mode-hook
+;;           'flycheck-mode)
+;; (add-hook 'clojure-mode-hook
+;;           'flycheck-clj-kondo)
+
+
+;; Cljs auto-complete
+;; ==================
+(add-hook 'clojurescript-mode-hook
+          'company-mode)
 
 
 ;; re-frame jump to keyword
