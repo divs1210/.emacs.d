@@ -35,7 +35,8 @@
 ;; markdown
 ;; ========
 (require-package 'markdown-mode)
-(add-hook 'markdown-mode-hook 'flyspell-mode)
+(add-hook 'markdown-mode-hook
+          #'flyspell-mode)
 (add-hook 'markdown-mode-hook
           (lambda ()
             (setq markdown-fontify-code-blocks-natively t)))
@@ -111,11 +112,9 @@
 (require-package 'web-mode)
 
 (add-hook 'html-mode-hook
-          'web-mode)
+          #'web-mode)
 (add-hook 'html-mode-hook
-          'company-mode)
-(flycheck-add-mode 'javascript-eslint
-                   'web-mode)
+          #'company-mode)
 
 
 ;; Interactive Mode
@@ -192,17 +191,18 @@
 
 ;; Clojure linting
 ;; ===============
-;; (require-package 'flycheck-clj-kondo)
-;; (add-hook 'clojure-mode-hook
-;;           'flycheck-mode)
-;; (add-hook 'clojure-mode-hook
-;;           'flycheck-clj-kondo)
+(require-package 'flycheck-clj-kondo)
+(require 'flycheck-clj-kondo)
+(add-hook 'clojure-mode-hook
+          #'flycheck-mode)
+(add-hook 'clojurescript-mode-hook
+          #'flycheck-mode)
 
 
 ;; Cljs auto-complete
 ;; ==================
 (add-hook 'clojurescript-mode-hook
-          'company-mode)
+          #'company-mode)
 
 
 ;; re-frame jump to keyword

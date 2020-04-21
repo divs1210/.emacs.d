@@ -29,7 +29,7 @@
 
 
 ;; error buffer not popping up
-(setq cider-show-error-buffer nil)
+;; (setq cider-show-error-buffer nil)
 
 ;; company mode for completion
 (add-hook 'cider-repl-mode-hook #'company-mode)
