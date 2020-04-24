@@ -8,6 +8,7 @@
 ;; - paredit
 ;; - clojure-mode
 ;; - cider
+;; - dumb-jump
 ;; - company
 ;; - flycheck
 ;; - flycheck-clj-kondo
@@ -68,7 +69,7 @@ re-downloaded in order to locate PACKAGE."
                 "cfg-cljrefactor.el"))
   (load (concat dotfiles-lisp-dir file)))
 
-
+(require-package 'dumb-jump)
   
 ;; Custom User configurations:
 ;; If you wish to add additional functionality to your emacs config beyond what is in this setup,

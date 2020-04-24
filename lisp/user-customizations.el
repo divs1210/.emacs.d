@@ -204,6 +204,9 @@
 (add-hook 'clojurescript-mode-hook
           #'company-mode)
 
+(add-hook 'clojure-mode-hook
+          #'company-mode)
+
 
 ;; re-frame jump to keyword
 ;; ========================
