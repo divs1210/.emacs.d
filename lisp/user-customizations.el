@@ -192,11 +192,9 @@
 ;; Clojure linting
 ;; ===============
 (require-package 'flycheck-clj-kondo)
-(require 'flycheck-clj-kondo)
-(add-hook 'clojure-mode-hook
-          #'flycheck-mode)
-(add-hook 'clojurescript-mode-hook
-          #'flycheck-mode)
+;; (require 'flycheck-clj-kondo)
+(add-hook 'clojure-mode-hook #'flycheck-mode)
+(add-hook 'clojurescript-mode-hook #'flycheck-mode)
 
 
 ;; Cljs auto-complete
@@ -206,6 +204,14 @@
 
 (add-hook 'clojure-mode-hook
           #'company-mode)
+
+;; (require-package 'anakondo)
+;; Enable anakondo-minor-mode in all Clojure buffers
+;; (add-hook 'clojure-mode-hook #'anakondo-minor-mode)
+;; Enable anakondo-minor-mode in all ClojureScript buffers
+;; (add-hook 'clojurescript-mode-hook #'anakondo-minor-mode)
+;; Enable anakondo-minor-mode in all cljc buffers
+;; (add-hook 'clojurec-mode-hook #'anakondo-minor-mode)
 
 
 ;; re-frame jump to keyword
