@@ -214,6 +214,11 @@
 ;; (add-hook 'clojurec-mode-hook #'anakondo-minor-mode)
 
 
+;; Dumb jump-to-source
+;; ===================
+(require-package 'dumb-jump)
+
+
 ;; re-frame jump to keyword
 ;; ========================
 (require 'cider-util)
