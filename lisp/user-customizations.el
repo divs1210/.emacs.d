@@ -214,7 +214,7 @@
 ;; (add-hook 'clojurec-mode-hook #'anakondo-minor-mode)
 
 
-;; Dumb jump-to-source
+;; dumb jump-to-source
 ;; ===================
 (require-package 'dumb-jump)
 
@@ -246,6 +246,12 @@
            (search-forward-regexp (concat "reg-[a-zA-Z-]*[ \\\n]+" kw-to-find) nil 'noerror))))
 
 (global-set-key (kbd "C-.") 're-frame-jump-to-reg)
+
+
+;; scheme ide
+;; ==========
+(require-package 'geiser)
+(setq geiser-active-implementations '(guile gambit chicken))
 
 
 (provide 'user-customizations)
